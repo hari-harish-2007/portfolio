@@ -1,0 +1,469 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #080808;
+}
+.change::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: width 0.5s ease;
+  z-index: -1;
+}
+
+.change:hover::before {
+  width: 105%;
+}
+  .container:nth-child(1){
+    animation-delay: 0s;
+  }
+  .container:nth-child(2){
+    animation-delay: 1s;
+  }
+  .container:nth-child(3){
+    animation-delay: 2s;
+  }
+  .container:nth-child(4){
+    animation-delay: 3s;
+  }
+  .container:nth-child(5){
+    animation-delay: 4s;
+  }
+
+  @keyframes movedown{
+    0%{
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+  }
+.javascripttext {
+  color: var(--javascript-color);
+}
+
+
+.reactjstext {
+  color: var(--reactjs-color);
+}
+
+.nodejstext {
+  color: var(--nodejs-color);
+}
+
+.expressjstext {
+  color: var(--expressjs-color);
+}
+
+.mongodbext {
+  color: var(--mongodb-color);
+}
+
+.phptext {
+  color: var(--php-color);
+
+}
+
+.company {
+  color: var(--main-color);
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.htmlcard {
+  border: 3px solid var(--htm-color);
+}
+
+.javascriptcard {
+  border: 3px solid var(--javascript-color);
+}
+
+.reactjscard {
+  border: 3px solid var(--reactjs-color);
+}
+
+.nodejscard {
+  border: 3px solid var(--nodejs-color);
+}
+
+.expressjscard {
+  border: 3px solid var(--expressjs-color);
+}
+
+.mongodbcard {
+  border: 3px solid var(--mongodb-color);
+}
+
+.phpcard {
+  border: 3px solid var(--php-color);
+}
+@keyframes moveline {
+
+  0% {
+      height: 0;
+  }
+
+  100% {
+      height: 100%;
+  }
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: 38px;
+  z-index: -1;
+  right: -15px;
+}
+
+
+.right-container-arrow {
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: 38px;
+  z-index: -1;
+  left: -15px;
+}
+
+.htmlarrow {
+  border: 5px solid var(--htm-color);
+}
+
+.javascriptarrow {
+  border: 5px solid var(--javascript-color);
+}
+
+.reactjsarrow {
+  border: 5px solid var(--reactjs-color);
+
+}
+
+.nodejsarrow {
+  border: 5px solid var(--nodejs-color);
+}
+
+.expressjsarrow {
+  border: 5px solid var(--expressjs-color);
+}
+
+.mongodbarrow {
+  border: 5px solid var(--mongodb-color);
+}
+.phparrow {
+  border: 5px solid var(--php-color);
+}
+  /* @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }  
+    .timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto; 
+    
+    .container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 7s linear forwards;
+    opacity: 0;
+    }
+    .container:nth-child(1){
+      animation-delay: 8s;
+    }
+    .container:nth-child(2){
+      animation-delay: 1s;
+    }
+    .container:nth-child(3){
+      animation-delay: 3s;
+    }
+    .container:nth-child(4){
+      animation-delay: 6s;
+    }
+    .container:nth-child(5){
+      animation-delay: 0s;
+    } 
+
+.container:nth-child(1) {
+  animation-delay: 3s;
+}
+
+.container:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.container:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.container:nth-child(4) {
+  animation-delay: 8s;
+}
+
+.container:nth-child(5) {
+  animation-delay: 9s;
+} 
+
+@keyframes movedown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+} */
+
+
+.box {
+  width: 60vmin;
+  height: 50vmin;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+
+  --border-angle: 0turn; /* For animation. */
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      hsl(40, 75%, 40%),
+      rgb(224, 234, 240) 99%,
+      transparent
+    );
+
+  background:
+    var(--main-bg) padding-box, /* Padding-box clips this background into the overall element except the border. */
+    var(--gradient-border) border-box, /* Border-box extends this background to the border space. */
+    var(--main-bg) border-box; /* Duplicate main background to fill in behind the gradient border. */
+
+  background-position: center center;
+  background-size: cover;
+  animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}.card {
+  position: relative;
+  padding: 80px;
+  width: 290px;
+  /* height: 254px; */
+  height: 295px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px; 
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg,#0675a136  0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #e0e4e6  0%, #00dbde 100% );
+  /* transform: translate3d(0, 0, 0) scale(0.95); */
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 18px;
+}
+
+/* .card p:last-child {
+  color: #e81cff;
+  font-weight: 800;
+} */
+.card p:last-child {
+  font-weight: 800;
+}
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #17C3B2;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
