@@ -3,22 +3,24 @@ import Navbar from './Compantant/Navbar';
 import { TypeAnimation } from 'react-type-animation';
 import { AiFillBulb } from "react-icons/ai";
 import React, { useEffect } from 'react';
- import AOS from 'aos';
- import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Home() {
     useEffect(() => {
-            AOS.init({ duration: 1000 }); // Set the AOS animation duration to 1000ms
-          }, []);
-    
+        AOS.init({ duration: 1000 }); // Set the AOS animation duration to 1000ms
+    }, []);
+
     return (
         <div data-aos="fade-right w-[100%] h-[100%] overflow-hidden">
             <div>
                 <div>
                     <Navbar />
                 </div>
-                <div className='grid  lg:grid-cols-2 overflow-hidden md:grid-cols-1 '>
-                    <div className=' w-[100%] mt-20 mx-20 h-[100%]'>
+                
+                <div className='grid overflow-x-[100%] md:mx-10 w-[100%] h-[100%] lg:grid-cols-2  md:grid-cols-1 '>
+                    <div className=' w-[100%] mt-20 lg:mx-14 ml-16 h-[100%]'>
 
                         <div className=''>
                             <h1 className='text-white font-bold text-2xl'>Hi,it's me<span className='text-3xl text-[#00ffee] font-serif ml-4'>Harish</span></h1>
@@ -167,12 +169,49 @@ function Home() {
                         </div>
 
                     </div>
-                    <div className='bg-[#17C3B2] ml-4    mt-8 lg:w-[500px] shadow-2xl shadow-teal-700 lg:h-[500px] rounded-full'>
-                        <img className='w-[600px] -mb-12  rounded- h-[500px]' src='/Assesst/happy-caucasian-male-graduate-graduation-glow-with-diploma-looking-camera-campus-removebg-preview.png' />
+                    <div className="liquid overflow-hidden ">
+                        <div className='lg:ml-40 -mt-2 md:ml-40  lg:w-[500px] '>
+                            <img className='w-[660px]  h-[530px] relative   lg:-mb-60  lg:h-[550px]' src='/Assesst/happy-caucasian-male-graduate-graduation-glow-with-diploma-looking-camera-campus-removebg-preview.png' />
+                        </div>
+
+
+                        <svg className=' harish overflow-hidden  lg:-ml-80 -mt-[850px] -z-10   absolute lg:w-[100%] w-[100%] h-[100%] lg:h-[100%] lg:-mt-80' viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="90%" id="blobSvg">
+                            <path fill="#17C3B2">
+                                <animate 
+                                    attributeName="d"
+                                    dur="20000ms"
+                                    repeatCount="indefinite"
+                                    values="
+                                    
+                      
+ M419.5,301Q426,352,386.5,385Q347,418,298.5,436.5Q250,455,195.5,446.5Q141,438,114.5,390.5Q88,343,64,296.5Q40,250,58.5,200Q77,150,119,123Q161,96,205.5,83Q250,70,304,66.5Q358,63,405.5,98Q453,133,433,191.5Q413,250,419.5,301Z;
+
+                                              M419.5,301Q426,352,386.5,385Q347,418,298.5,436.5Q250,455,195.5,446.5Q141,438,114.5,390.5Q88,343,64,296.5Q40,250,58.5,200Q77,150,119,123Q161,96,205.5,83Q250,70,304,66.5Q358,63,405.5,98Q453,133,433,191.5Q413,250,419.5,301Z;
+
+M419.5,301Q426,352,386.5,385Q347,418,298.5,436.5Q250,455,195.5,446.5Q141,438,114.5,390.5Q88,343,64,296.5Q40,250,58.5,200Q77,150,119,123Q161,96,205.5,83Q250,70,304,66.5Q358,63,405.5,98Q453,133,433,191.5Q413,250,419.5,301Z;
+
+                                              M426,291Q392,332,369,373.5Q346,415,298,413.5Q250,412,211.5,398Q173,384,116,372Q59,360,54.5,305Q50,250,56,196Q62,142,107,111Q152,80,201,45Q250,10,298,47Q346,84,404.5,105.5Q463,127,461.5,188.5Q460,250,426,291Z;
+                                              M424.5,301.5Q428,353,399,405.5Q370,458,310,440Q250,422,207.5,409.5Q165,397,105.5,382.5Q46,368,39,309Q32,250,59,202.5Q86,155,113.5,108Q141,61,195.5,42Q250,23,309.5,33.5Q369,44,381,105.5Q393,167,407,208.5Q421,250,424.5,301.5Z;
+
+                                              M455,296.5Q411,343,374.5,373Q338,403,294,414Q250,425,198.5,426.5Q147,428,108,391Q69,354,77.5,302Q86,250,90,205Q94,160,116,108Q138,56,194,50Q250,44,292,74.5Q334,105,382.5,125Q431,145,465,197.5Q499,250,455,296.5Z;
+
+
+                                              M411,298Q417,346,383,383.5Q349,421,299.5,432Q250,443,195,441.5Q140,440,94.5,403Q49,366,29,308Q9,250,60,210Q111,170,140,139.5Q169,109,209.5,101.5Q250,94,306,75Q362,56,385,107.5Q408,159,406.5,204.5Q405,250,411,298Z;
+
+
+
+
+                                              M419.5,301Q426,352,386.5,385Q347,418,298.5,436.5Q250,455,195.5,446.5Q141,438,114.5,390.5Q88,343,64,296.5Q40,250,58.5,200Q77,150,119,123Q161,96,205.5,83Q250,70,304,66.5Q358,63,405.5,98Q453,133,433,191.5Q413,250,419.5,301Z;
+                                    ">
+                                </animate>
+                            </path>
+                        </svg>
+
                     </div>
 
+
                 </div>
-            </div>
+            </div >
         </div>
 
     )

@@ -6,7 +6,7 @@ function Timeline() {
     return (
         <div>
             <hr className='mt-28 justify-center lg:mx-80 mx-20 overflow-hidden ' />
-            <h1 className='text-4xl text-white mt-10  font-bold  ml-40'>Education</h1>
+            <h1 className='text-4xl text-white mt-10  font-bold md:ml-20 ml-40'>Education</h1>
             <div data-aos="zoom-out-up">
                 <div class="timeline ">
                     <div class="container left">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai"; // You can use a close icon for the toggling
 
@@ -21,12 +22,13 @@ function Navbar() {
               } lg:min-h-fit min-h-[25vh] w-full lg:w-auto flex px-5`}
           >
             <nav>
-              <ul className="lg:flex text-[20px] font-semibold gap-8 lg:flex-row flex-col">
-                <li className="hover:underline cursor-pointer decoration-[#00ffee] underline-offset-[5px]">
-               <a href='./Home.jsx'>   Home</a>
+               <ul className="lg:flex text-[20px] font-semibold gap-8 lg:flex-row flex-col"> 
+              <li className="hover:underline cursor-pointer decoration-[#00ffee] underline-offset-[5px]">
+                Home
                 </li>
-                <li className="hover:underline decoration-[#00ffee] cursor-pointer underline-offset-[8px]">
-                <a href='./About.jsx'>   About</a>
+               <li className="hover:underline decoration-[#00ffee] cursor-pointer underline-offset-[8px]">
+                  
+                   About
                 </li>
                 <li className="hover:underline decoration-[#00ffee] cursor-pointer underline-offset-[8px]">
                   Education
@@ -37,7 +39,7 @@ function Navbar() {
                 <li className="hover:underline decoration-[#00ffee] cursor-pointer underline-offset-[8px]">
                   Contact
                 </li>
-              </ul>
+               </ul> 
             </nav>
           </div>
           <div className="flex items-center text-[#00ffee] gap-4 lg:hidden">

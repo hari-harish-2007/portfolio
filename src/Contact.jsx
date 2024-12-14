@@ -11,8 +11,8 @@ function Contact() {
                 <h1 className='text-3xl text-white font-bold '>Contact Me!</h1>
                 <p className='text-2xl text-white font-serif mt-5 '>if you Have Any project in mind. </p>
                 <p className='text-2xl text-white font-serif mt-5 w-2/3'>i'm a website designer-creating bold & braver interface design for companies oil acrocss the word</p>
-                <p className='text-2xl text-white font-serif mt-5'>0123456789</p>
-                <p className='text-2xl text-white font-serif mt-5'>itech@gmail.com</p>
+                <p className='text-2xl text-white font-serif mt-5'>+7358868286</p>
+                <p className='text-2xl text-white font-serif mt-5'>thharish483@gmail.com</p>
                 <p className='text-2xl text-white font-serif mt-5'>Like share & subscribe</p>
                 <div className='flex gap-6 mt-12'>
                     <section class="">

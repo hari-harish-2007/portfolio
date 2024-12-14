@@ -12,8 +12,9 @@ function Zoom() {
         <div class="overflow-hidden shadow-2xl shadow-teal-700 w-96 h-72 rounded-sm">
           <img src="/Assesst/project-1.jpg" alt="Zoomable Image" class="transform transition duration-500 hover:scale-110 w-full h-full object-cover" />
         </div>
-        <div class="overflow-hidden shadow-2xl shadow-teal-700 w-96 h-72 rounded-lg">
-          <img src="/Assesst/project-6.jpg" alt="Zoomable Image" class="transform transition duration-500 hover:scale-110 w-full h-full object-cover" />
+        <div class="computer overflow-hidden shadow-2xl shadow-teal-700 w-96 h-72 rounded-lg">
+          <img src="/Assesst/project-6.jpg" alt="Zoomable Image" class=" transform transition duration-500 hover:scale-110 w-full h-full object-cover" />
+          <p className='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dicta tenetur, fugiat accusamus, dignissimos voluptatibus magni quis veritatis cumque culpa nam atque, explicabo provident officiis eaque quo quam ullam quibusdam!</p>
         </div>
         <div class="overflow-hidden shadow-2xl shadow-teal-700 w-96 h-72 rounded-lg">
           <img src="/Assesst/project-2.jpg" alt="Zoomable Image" class="transform transition duration-500 hover:scale-110 w-full h-full object-cover" />

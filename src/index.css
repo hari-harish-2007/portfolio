@@ -5,6 +5,11 @@
 body{
   background-color: #080808;
 }
+.harish:nth-child(2) {
+  filter: blur(2);
+}
+
+
 .change::before {
   content: '';
   width: 0;
