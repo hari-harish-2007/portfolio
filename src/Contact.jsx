@@ -7,10 +7,10 @@ function Contact() {
     return (
         <div data-aos="fade-left overflow-hidden">
         <div className='grid  lg:grid-cols-2 mt-40 md:grid-cols-1 overflow-hidden'>
-            <div className='mt-10 ml-20'>
+            <div className='mt-10 lg:ml-20 ml-10'>
                 <h1 className='text-3xl text-white font-bold '>Contact Me!</h1>
-                <p className='text-2xl text-white font-serif mt-5 '>if you Have Any project in mind. </p>
-                <p className='text-2xl text-white font-serif mt-5 w-2/3'>i'm a website designer-creating bold & braver interface design for companies oil acrocss the word</p>
+                <p className='lg:text-2xl text-white font-serif mt-5 text-xl '>if you Have Any project in mind. </p>
+                <p className='lg:text-2xl text-white font-serif mt-5 w-2/3 text-xl'>i'm a website designer-creating bold & braver interface design for companies oil acrocss the word</p>
                 <p className='text-2xl text-white font-serif mt-5'>+7358868286</p>
                 <p className='text-2xl text-white font-serif mt-5'>thharish483@gmail.com</p>
                 <p className='text-2xl text-white font-serif mt-5'>Like share & subscribe</p>
@@ -122,19 +122,19 @@ function Contact() {
                     </section>
                 </div>
             </div>
-            <div className='flex flex-col ml-[20px]  w-[60rem] p-10 mx-40 backdrop-filter backdrop-blur-sm brightness-75 shadow-2xl shadow-teal-700 overflow-hidden bg-transparent'>
+            <div className='flex flex-col ml-[4px] lg:ml-[20px]  w-[60rem] p-10  mx-40 backdrop-filter backdrop-blur-sm brightness-75 shadow-2xl shadow-teal-700 overflow-hidden bg-transparent '>
                 {/* Name Input */}
-                <div className="flex items-center border mt-5 bg-white p-2 rounded-md focus-within:border-[#17C3B2]  w-[70%]">
+                <div className="flex items-center border mt-5 bg-white p-2 rounded-md focus-within:border-[#17C3B2] w-[34%] lg:w-[60%]">
                     <FaUser className='text-2xl text-gray-400' />
                     <input
-                        className="ml-4 w-full p-2 focus:outline-none border-b border-gray-300 focus:border-[#17C3B2] transition duration-300"
+                        className="ml-4 w-80 p-2 focus:outline-none border-b border-gray-300 focus:border-[#17C3B2] transition duration-300"
                         type="text"
                         placeholder="Your Name" required
                     />
                 </div>
 
                 {/* Phone Input */}
-                <div className="flex items-center border mt-5 bg-white p-2 rounded-md focus-within:border-[#17C3B2] w-[70%]">
+                <div className="flex items-center border mt-5 bg-white p-2 rounded-md focus-within:border-[#17C3B2] w-[34%] lg:w-[60%]">
                     <IoCall className='text-2xl text-gray-400' />
                     <input
                         className="ml-4 w-full p-2 focus:outline-none border-b border-gray-300 focus:border-[#17C3B2] transition duration-300"
@@ -144,7 +144,7 @@ function Contact() {
                 </div>
 
                 {/* Email Input */}
-                <div className="flex items-center border mt-5 bg-white p-2 rounded-md focus-within:border-[#17C3B2] w-[70%]">
+                <div className="flex items-center border mt-5 bg-white p-2 rounded-md focus-within:border-[#17C3B2] w-[34%] lg:w-[60%]">
                     <MdEmail className='text-2xl text-gray-400' />
                     <input
                         className="ml-4 w-full p-2 focus:outline-none border-b border-gray-300 focus:border-[#17C3B2] transition duration-300"
@@ -154,7 +154,7 @@ function Contact() {
                 </div>
 
                 {/* Message Input */}
-                <div className="flex flex-col mt-5 w-[70%]">
+                <div className="flex flex-col mt-5 w-[34%] lg:w-[60%]">
                     <label className="text-gray-400 mb-2">Enter your Message</label>
                     <textarea
                         className="p-3 rounded-md focus:outline-none border border-gray-300 focus:border-rose-500 resize-y"

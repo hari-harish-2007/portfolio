@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai"; // You can use a close icon for the toggling
 
@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <div>
-      <div className="overflow-hidden bg-[#080808] bg-white/30  backdrop-filter  text-white  mx-4 py-8 rounded-b-2xl">
+      <div className="overflow-hidden  bg-[#080808] bg-white/30  backdrop-filter  text-white  mx-4 py-8 rounded-b-2xl">
         <header className="flex items-center justify-between mx-8">
 
           <h1 className='text-3xl  font-serif'>Portfolio</h1>
@@ -22,7 +22,7 @@ function Navbar() {
               } lg:min-h-fit min-h-[25vh] w-full lg:w-auto flex px-5`}
           >
             <nav>
-               <ul className="lg:flex text-[20px] font-semibold gap-8 lg:flex-row flex-col"> 
+               <ul className="lg:flex text-[20px]  font-semibold gap-8 lg:flex-row flex-col"> 
               <li className="hover:underline cursor-pointer decoration-[#00ffee] underline-offset-[5px]">
                 Home
                 </li>
