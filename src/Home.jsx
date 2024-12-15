@@ -193,7 +193,7 @@ function Home() {
                         </div>
 
 
-                        <svg className=' harish overflow-hidden  lg:-ml-80 -mt-[76rem]  -z-10   absolute lg:w-[100%] w-[100%] h-[160%] lg:h-[100%] lg:-mt-80' viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="90%" id="blobSvg">
+                        <svg className=' harish overflow-hidden  lg:-ml-80 -mt-[72rem]  -z-10   absolute lg:w-[100%] w-[100%] h-[160%] lg:h-[100%] lg:-mt-80' viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="90%" id="blobSvg">
                             <path fill="#17C3B2">
                                 <animate
                                     attributeName="d"

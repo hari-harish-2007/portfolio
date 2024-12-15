@@ -3,10 +3,10 @@ import React from 'react'
 function Serivese() {
   return (
     <div className='mt-20 overflow-hidden'>
-      <h1 className='text-5xl text-white ml-40 font-bold'>Services</h1>
+      <h1 className='text-5xl text-white ml-10  lg:ml-40 font-bold'>Services</h1>
       <div className=' items-center mt-20 grid lg:grid-cols-4 md:grid-cols-1 gap-40 mx-20 justify-center p-8'>
       <div data-aos="zoom-in">
-        <div class="card w-12 h-[500px] ">
+        <div class="card w-10 h-[500px] ">
           <p class="heading text-white text-bold font-bold">
             Ui Design
           </p>

@@ -5,8 +5,8 @@ import { MdOutlineCastForEducation } from "react-icons/md";
 function Timeline() {
     return (
         <div>
-            <hr className='mt-28 justify-center lg:mx-80 mx-20 overflow-hidden ' />
-            <h1 className='text-4xl text-white mt-10  font-bold md:ml-20 ml-40'>Education</h1>
+            <hr className='mt-28 justify-center lg:mx-80 mx-14 overflow-hidden ' />
+            <h1 className='text-4xl text-white mt-10 ml-10  font-bold  lg:ml-40'>Education</h1>
             <div data-aos="zoom-out-up">
                 <div class="timeline ">
                     <div class="container left">
@@ -46,7 +46,7 @@ function Timeline() {
                     </div>
                 </div>
             </div>
-            <hr className='mt-40 justify-center lg:mx-80 mx-20 overflow-hidden ' />
+            <hr className='mt-40 justify-center lg:mx-80 mx-14   overflow-hidden ' />
         </div>
     )
 }
